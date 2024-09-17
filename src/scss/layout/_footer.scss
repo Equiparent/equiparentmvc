@@ -1,0 +1,24 @@
+.footer {
+    padding: calc($separacion / 2) 0;
+    background-color: $grisOscuro;
+    font-family: $fuente_principal;
+    font-size: 1.3rem;
+    font-weight: 700;
+    align-items: center;
+  
+
+    .contenedor-footer {
+        padding-top: calc($separacion / 2);
+    }
+    
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+
+    .copyright {
+        color: $blanco;
+        text-align: center;
+    }
+}

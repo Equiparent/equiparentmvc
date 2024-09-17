@@ -1,0 +1,89 @@
+.inicio {
+    background-image: url(../img/hero.jpg);
+   
+}
+.header {
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 70rem;
+        }
+
+        .contenido-header {
+            @include tablet {
+                min-height: 70rem;
+            }
+        }
+    }
+}
+h2 {
+    color: $blanco;
+    font-weight: $bold;
+}
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        max-width: 60rem;
+       
+    }
+    h2 {
+        color: $blanco;
+    }
+    a {
+        color: $blanco;
+        padding: 1rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;  
+        text-align: center;      
+    }  
+    
+    .contenido-centrado,
+    .boton-verde {    
+        display: flex;
+        background-color: $verde;
+        border-radius: .5rem;
+        border: none;
+
+
+            .icon {
+                display: inline;
+            }
+
+        @include telefono {
+            .boton {
+                width: auto;
+                
+            }
+        }
+        @include tablet {
+            .boton {
+                width: auto;       
+            }
+        }
+        .boton a:hover {
+            cursor: pointer;
+        }
+
+    }
+
+
+}
+
+
+
+
+
+

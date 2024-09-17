@@ -1,0 +1,26 @@
+:root {
+    --separacion: 2rem; /* Example value for the variable */
+}
+
+.seccion {
+    margin-top: calc(var(--separacion) / 2);
+    margin-bottom: calc(var(--separacion) / 2);
+}
+
+.contenido-centrado {
+    max-width: 80rem;
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alinear-izquierda {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.w-100 {
+    width: 100%;
+}

@@ -1,0 +1,34 @@
+// Ensure that these variables are defined somewhere in your SCSS files.
+$amarillo:#FFC107;
+$verdeClaro: #8BC34A;
+$verde:#0097A7;
+$rojo: #F44336;
+$blanco:#FFFFFF;
+
+// Ensure that the mixin is defined somewhere in your SCSS files.
+
+
+.boton-amarillo {
+    @include boton($amarillo, inline-block);
+}
+
+.boton-amarillo-block {
+    @include boton($amarillo, block);
+}
+
+.boton-verde-claro {
+    @include boton($verdeClaro, inline-block);
+}
+
+.boton-verde {
+    @include boton($verde, inline-block);
+}
+
+.boton-rojo-block {
+    @include boton($rojo, block);
+}
+/// This SCSS block styles an element with the 'boton-verde-block' class.
+/// It uses the 'boton' mixin with the '$verde' color and 'block' display mode.
+.boton-verde-block {
+    @include boton($verde, block);
+}
